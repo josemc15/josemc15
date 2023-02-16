@@ -1,0 +1,193 @@
+DAY-1
+
+1.sql
+sql is stands by structured query language.
+Its manipulate database.
+It can be used to create , read,update and delete database records.
+
+2.normalization:
+It is the process to elimate the redundancy and
+It also helps organising the data in the database.
+insertion anomaly,update anomaly and deletion anomaly it is adatabase design techquie.
+
+3.constraints in sql:
+It are used to specify rules for the data in the table.
+
+1.notnull
+colwmn value not have a null value.
+
+2.unique
+all value in a column be a unique it means diferent values.
+
+3.primary key
+It uniquely identified each record in table.
+
+4. forign key
+foriegn key is used to link two tables and it refer primary key.
+
+5.check
+that values in a column satisfies a specfic condition.
+
+6.default
+It set a default value for a column when no value is specified.
+
+7.index
+use to create and return data from database quickly.
+
+
+4.Datatypes.
+
+The data types define column that values can hold integer,charater, date and time ,binary and so on.
+Each cowmn in a database table is required a name and datatypes.
+
+CHARACTER:
+STRING LETTER,NUMBER AND SYMBOLS 
+DATA TYPE ARE
+CHAR,VARCHAR 
+
+NUMERIC:
+THE extract datatypes are
+SMALLINT,INTEGER,BIGINT,NUMERIC,DECIMAL
+
+DATETIME:
+It contains date and time both values.
+
+
+DAY-2
+
+1.CREATING DATABASE:
+
+QUERY:
+CREATE DATABASE database name;
+
+CREATING TABLE:
+
+QUERY:
+CREATE TABLE table_name(column1 datatype,......);
+
+
+
+2.INSERT INTO
+
+Inserting column values and data's
+
+QUERY:
+INSERT INTO table name values ('','','',....);
+
+3.SELECT 
+  Select statement is used to select data from database.
+
+QUERY:
+SELECT column,... 
+from table_name
+
+select over all table function
+SELECT * FROM table_name
+
+4.DELETE
+Delete existing records from tables.
+
+QUERY:
+DELETE FROM table_name 
+Where column's
+
+
+DAY 3
+
+1.WHERE CLAUSE
+
+It used for filter records.
+It used to extract only those records that specfied condition.
+
+QUERY:
+SELECT column1,...
+FROM table_name
+WHERE condition;
+
+
+2.UPDATE CLAUSE
+
+THIS statement is used to modify the existing records in a table.
+
+QUERY:
+UPDATE table_name
+Set column1= value1,....
+where condition,
+
+
+
+3.SQL OPERATORS:
+
+THE WHERE clause can be combined with AND,OR, Between and NOT operators.
+
+The AND and OR operators are used to filter records based on more than one condition.
+
+The NOT operators display record if the condition is NOT TRUE.
+
+BETWEEN	TRUE if the operand is within the range of comparisons.
+
+LIKE	TRUE if the operand matches a pattern
+
+4.HAVING CLAUSE:
+
+Having clause is used in combination with group byto impose condition on groups.
+
+QUERY:
+
+
+
+ DAY 4
+
+2.SQL ORDER BY
+
+The ordered  by column1,column2 ascending and descending order by default .
+ASC
+DESC
+
+QUERY:
+select*from student order by table_name asc;
+select*from student order by table_name desc;
+
+SQL GROUP BY
+
+The group by statement is `often aggregate functions
+COUNT(),- counting data
+MAX(), - maximum function returns largest value of the selected column
+MIN(),- smallest value of the selected column
+SUM(),-total sum 
+AVG().
+
+QUERY:
+SELECT column_name,COUNT() as column_name
+from table_name 
+group by column_name;
+
+
+1.change Date of birth to Age
+select datediff(year,Date_of_birth,getdate())as age 
+from Table_name.
+
+1.Data definition language:
+
+DDL commands help to define the structure of the databases or schema.
+
+CREATE: It is used to create a new database and its objects such as table, views, function, stored procedure, triggers, etc.
+DROP: It is used to delete the database and its objects, including structures, from the server permanently.
+ALTER: It's used to update the database structure by modifying the characteristics of an existing attribute or adding new attributes.
+TRUNCATE: It is used to completely remove all data from a table, including their structure and space allocates on the server.
+RENAME: This command renames the content in the database.
+
+Why we use DDL commands?
+The following are the reasons to use DDL commands:
+It allows us to store shared data in a database.
+It improved integrity due to the data independence feature.
+It will enable multiple users to work on the same databases.
+It improved security efficient data access.
+
+2.Data Manipulate language:
+SELECT: This command is used to extract information from a table.
+INSERT: It is a SQL query that allows us to add data into a table's row.
+UPDATE: This command is used to alter or modify the contents of a table.
+DELETE: This command is used to delete records from a database table, either individually or in groups.
+
+
